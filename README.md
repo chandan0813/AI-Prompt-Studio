@@ -84,7 +84,7 @@ AI Prompt Studio is a Next.js web application designed to help users customize, 
 
 1.  **Clone the repository**:
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/chandan0813/AI-Prompt-Studio
     cd ai-prompt-studio
     ```
 
