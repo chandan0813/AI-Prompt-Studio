@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 7%;              /* #121212 */
+    --foreground: 0 0% 92%;            /* #EAEAEA */
+
+    --card: 0 0% 10%;                   /* #1A1A1A */
+    --card-foreground: 0 0% 92%;        /* #EAEAEA */
+
+    --popover: 0 0% 10%;                /* #1A1A1A */
+    --popover-foreground: 0 0% 92%;     /* #EAEAEA */
+
+    --primary: 180 100% 25%;            /* Teal #008080 */
+    --primary-foreground: 0 0% 100%;    /* White #FFFFFF */
+
+    --secondary: 0 0% 14%;              /* #242424 - For secondary components' background */
+    --secondary-foreground: 0 0% 80%;   /* Lighter gray text #CCCCCC on secondary components */
+
+    --muted: 0 0% 14%;                  /* #242424 - Muted components' background */
+    --muted-foreground: 0 0% 60%;       /* #999999 - Muted text (e.g. placeholders) */
+
+    --accent: 180 100% 25%;             /* Teal #008080 - same as primary */
+    --accent-foreground: 0 0% 100%;     /* White #FFFFFF */
+
+    --destructive: 0 84.2% 60.2%;       /* Default shadcn red */
+    --destructive-foreground: 0 0% 98%; /* Default shadcn light text */
+
+    --border: 0 0% 20%;                 /* #333333 - General borders */
+    --input: 0 0% 12%;                  /* #1F1F1F - Input field background */
+    --ring: 180 80% 35%;                /* Brighter Teal for focus rings */
+
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
